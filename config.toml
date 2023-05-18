@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Hugo Hero Theme"
 theme = "hugo-hero-theme"
 
+[build]
+  writeStats = true
+
 [module]
   [module.hugoVersion]
     extended = true
