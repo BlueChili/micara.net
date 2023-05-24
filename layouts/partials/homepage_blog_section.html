@@ -1,0 +1,9 @@
+<div {{ with .Params.id }}id="{{ . }}"{{ end }} class="container pb-6 pt-6 pb-md-10 pt-md-10">
+  <div class="row">
+    <h2 class="text-primary text-center w-100">Blog</h2>
+    <!-- <p class="mt-2">This section addresses questions we encounter often in our client engagements. So we decided to have this section where we will share on a more or less regular basis short technical articles and insights based on our work. (these are only 4 Blog articles, but we have about 50 and about weekly one more). If you want to know more reach out and we will share more content with you. </p> -->
+    {{ range where site.RegularPages "Section" "blog" }}
+    <div class="col-12 col-md-6 mb-2 mt-2">{{ .Render "summary" }}</div>
+    {{ end }}
+  </div>
+</div>

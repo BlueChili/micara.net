@@ -1,0 +1,13 @@
+<div class="work work-summary">
+  {{ if .Params.images }}
+  <div class="work-image">
+    <a href="{{ .RelPermalink }}">{{ partial "img" (dict "src" (index .Params.images 0) "Page" .) }}</a>
+  </div>
+  {{ end }}
+  <div class="work-content">
+    <h2 class="work-title">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+    {{ .Content | truncate 120 "..." | plainify }}
+  </div>
+</div>

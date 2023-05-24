@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+{{ $reusablePages := sort .Pages ".Params.weight" }}
+
+{{ with $reusablePages }}
+    {{ range . }}
+        {{- partial .Params.partial_layout . -}}
+    {{- end -}}
+{{- else -}}
+    {{- partial .Params.partial_layout . -}}
+{{ end }}
+
+{{ end }}

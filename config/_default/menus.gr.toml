@@ -1,0 +1,29 @@
+[[main]]
+	name = "Σχετικά με εμάς"
+	url = "/about"
+  weight = 1
+
+[[main]]
+	name = "Υπηρεσίες"
+  url = "/solutions"
+  weight = 1
+
+[[main]]
+  name = "Blog"
+  url = "/blog"
+  weight = 2
+
+[[main]]
+  name = "Επικοινωνία"
+  url = "/contact"
+  weight = 3
+
+[[main]]
+  name = "Εκτύπωση"
+  url = "/imprint"
+  weight = 4
+
+[[main]]
+  name = "Απόρρητο"
+  url = "/privacy"
+  weight = 5

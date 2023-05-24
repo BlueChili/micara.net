@@ -1,0 +1,52 @@
+baseURL = "/"
+title = "Micara.net"
+theme = "hugo-hero-theme"
+
+[build]
+  writeStats = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+[params]
+  google_analytics_id=""
+
+  [params.logo]
+    mobile = "images/logo.png"
+    mobile_height = "63px"
+    mobile_width = "160px"
+    desktop = "images/logo.png"
+    desktop_height = "63px"
+    desktop_width = "160px"
+    alt = "Hugo Hero"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
+
+defaultContentLanguage = 'en'
+
+[languages]
+  [languages.en]
+  languageName = "En"
+  contentDir = "content/english"
+  description = "Micara.net official website"
+  weight = 1
+
+  [languages.fr]
+  languageName = "Fr"
+  contentDir = "content/french"
+  description = "Site officiel Micara.net"
+  weight = 2
+   
+  [languages.de]
+  languageName = "De"
+  contentDir = "content/deutsch"
+  description = "Offizielle Micara.net-Website"
+  weight = 3
+   
+  [languages.gr]
+  languageName = "Gr"
+  contentDir = "content/greek"
+  description = "Επίσημος ιστότοπος Micara.net"
+  weight = 4

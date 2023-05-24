@@ -1,0 +1,19 @@
+<div id="blog-hero" class="hero-image hero-image-setheight">
+    {{- partial "img" (dict "src" .background "class" "blog-hero" "Page" .content "sizes" "100vw") -}}
+    <div class="hero-image blog-hero-overlay" style="z-index: 1;"></div>
+    <div class="container position-relative" style="z-index: 2;">
+        <div class="hero-text">
+            <span class="hero-section">{{ .content.Date.Format "2006-01-02" }}</span>
+            <h1>{{ .heading }}</h1>
+            <p>{{ .content.Params.author }}</p>
+            {{ with .content.Params.tags }}
+                <div>
+                {{ range . }}
+                {{- $tag := index site.Taxonomies.tags (urlize .) -}}
+                    <span class="tag-pod">#{{ . }}</span>
+                {{ end }}
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</div>

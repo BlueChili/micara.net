@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+{{ if eq .Params.layout "custom" }}
+    {{ range .Pages }}
+        {{- partial .Params.partial_layout . -}}
+    {{ end }}
+{{ else }}
+    <section id="solutions-list" class="bg-overlay">
+        <div class="container pt-8 pb-8">
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2">
+                    {{ with .Title }}<h2 class="text-primary text-center text-capitalize mb-4">{{ . }}</h2>{{ end }}
+                    {{ with .Pages }}
+                    <div class="solutions-items">
+                        {{ range . }}
+                            <a href="{{ .Permalink }}">
+                                {{ readFile (printf `static/%s` .Params.icon) | safeHTML }}
+                                <p>{{ .Title }}</p>
+                            </a>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}
+
+{{ end }}

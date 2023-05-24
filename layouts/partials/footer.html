@@ -1,0 +1,48 @@
+{{- $logo := resources.Get .Site.Params.logo.desktop -}}
+{{- $logo_optimized := $logo.Resize (printf `%dx%d q90 webp Lanczos` $logo.Width $logo.Height) -}}
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+            <img src="{{ $logo_optimized.Permalink }}" alt="">
+
+<ul class="col-12 flex-column footer-main-menu">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <li class="">
+      <a href="{{ absLangURL .URL}}">
+        {{ .Pre }}
+        <span>{{ .Name }}</span>
+      </a>
+    </li>
+    {{end}}
+    {{ $pageLang := .Page.Page.Lang}}
+    <li id="footer-lang" class="menu-item">
+        <select name="desktop-lang" onchange="switchLang(event)">
+            {{ range $k, $v := .Page.Page.AllTranslations }}
+                {{ if eq $pageLang .Lang}}
+                <option value="{{ .Permalink }}">{{ upper .Language.LanguageName }}</option>
+                {{ end }}
+            {{ end }}
+            {{ range $k, $v := .Page.Page.AllTranslations }}
+                {{ if ne $pageLang .Lang}}
+                {{/* <option value="{{ .Permalink }}">{{ readFile (printf `static/images/flags/%s.svg` .Language.LanguageName) }}{{ .Language.LanguageName }}</option> */}}
+                <option value="{{ .Permalink }}">{{ upper .Language.LanguageName }}</option>
+                {{ end }}
+            {{ end }}
+        </select>
+    </li>
+
+  </ul>
+
+          <ul class="footer-menu">
+            <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+            <li><a href="{{ .Site.BaseURL }}contact">Contact</a></li>
+            <li class="copyright">© {{ now.Format "2006" }} {{.Site.Title}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+{{- $logo := resources.Get .Site.Params.logo.desktop -}}
+{{- $logo_optimized := $logo.Resize (printf `%dx%d q90 webp Lanczos` $logo.Width $logo.Height) -}}
+
+<div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="{{ absLangURL "/" }}"><img height={{ .Site.Params.logo.desktop_height }} width={{ .Site.Params.logo.mobile_width }} alt="{{ .Site.Params.logo.alt }}" src="{{ $logo_optimized.Permalink }}" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="{{ absLangURL "/" }}"><img height={{ .Site.Params.logo.mobile_height }} width={{ .Site.Params.logo.mobile_width }} alt="{{ .Site.Params.logo.alt }}" src="{{ $logo_optimized.Permalink }}" /></a>
+    </div>
+    {{ partial "main-menu.html" . }}
+    {{ partial "hamburger.html" . }}
+  </div>
+</div>

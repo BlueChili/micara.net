@@ -1,0 +1,29 @@
+<div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+      <a href="{{.URL}}">
+        {{ .Pre }}
+        <span>{{ .Name }}</span>
+      </a>
+    </li>
+    {{end}}
+    {{ $pageLang := .Page.Page.Lang}}
+    <li id="mobile-lang" class="menu-item">
+        <select name="mobile-lang" onchange="switchLang(event)">
+            {{ range $k, $v := .Page.Page.AllTranslations }}
+                {{ if eq $pageLang .Lang}}
+                <option value="{{ .Permalink }}">{{ upper .Language.LanguageName }}</option>
+                {{ end }}
+            {{ end }}
+            {{ range $k, $v := .Page.Page.AllTranslations }}
+                {{ if ne $pageLang .Lang}}
+                {{/* <option value="{{ .Permalink }}">{{ readFile (printf `static/images/flags/%s.svg` .Language.LanguageName) }}{{ .Language.LanguageName }}</option> */}}
+                <option value="{{ .Permalink }}">{{ upper .Language.LanguageName }}</option>
+                {{ end }}
+            {{ end }}
+        </select>
+    </li>
+  </ul>
+</div>

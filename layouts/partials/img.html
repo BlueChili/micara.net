@@ -1,0 +1,22 @@
+{{- $res := cond (and (isset . "Page" ) (ne nil (.Page.Resources.GetMatch .src)))
+                    ( .Page.Resources.GetMatch .src)
+                    ( resources.FromString .src (readFile (printf `static/%s` .src) ) )
+-}}
+
+<picture>
+    <source
+        type="image/webp"
+        srcset="{{- if gt $res.Width 450 -}}{{ ($res.Resize `450x webp q80`).Permalink }} 450w,{{- end -}}
+                {{- if gt $res.Width 750 -}}{{ ($res.Resize `750x webp q80`).Permalink }} 750w,{{- end -}}
+                {{- if gt $res.Width 1000 -}}{{ ($res.Resize `1000x webp q80`).Permalink }} 1000w,{{- end -}}
+                {{- if gt $res.Width 1200 -}}{{ ($res.Resize `1200x webp q80`).Permalink }} 1200w,{{- end -}}
+                {{- if gt $res.Width 1500 -}}{{ ($res.Resize `1500x webp q80`).Permalink }} 1500w,{{- end -}}
+                {{- if gt $res.Width 2000 -}}{{ ($res.Resize `2000x webp q80`).Permalink }} 2000w,{{- end -}}
+                {{- if gt $res.Width 2500 -}}{{ ($res.Resize `2500x webp q80`).Permalink }} 2500w,{{- end -}}
+                {{- if gt $res.Width 3000 -}}{{ ($res.Resize `3000x webp q80`).Permalink }} 3000w,{{- end -}}
+                {{ ($res.Resize (printf `%dx%d webp q80` $res.Width $res.Height)).Permalink }} {{ $res.Width }}w"
+        sizes="{{- .sizes -}}"
+        >
+    <img class="img {{- with .class }} {{ . }}{{ end -}}" src="{{ $res.Permalink }}" alt="{{ $res.Name }}" width="{{ $res.Width }}" height="{{ $res.Height }}">
+</picture>
+

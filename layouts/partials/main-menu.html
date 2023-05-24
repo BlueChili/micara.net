@@ -1,0 +1,31 @@
+<div id="main-menu" class="main-menu">
+  <ul>
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <li class="menu-item-{{ .Name | lower }}{{ if or ($currentPage.IsMenuCurrent "main" .) (eq $currentPage.RelPermalink .URL) }} active{{ end }}">
+      <a href="{{ absLangURL .URL}}">
+        {{ .Pre }}
+        <span>{{ .Name }}</span>
+      </a>
+    </li>
+    {{end}}
+    {{ $pageLang := .Page.Page.Lang}}
+    <li id="desktop-lang" class="menu-item">
+        <select name="desktop-lang" onchange="switchLang(event)">
+            {{ range $k, $v := .Page.Page.AllTranslations }}
+                {{ if eq $pageLang .Lang}}
+                <option value="{{ .Permalink }}">{{ upper .Language.LanguageName }}</option>
+                {{ end }}
+            {{ end }}
+            {{ range $k, $v := .Page.Page.AllTranslations }}
+                {{ if ne $pageLang .Lang}}
+                {{/* <option value="{{ .Permalink }}">{{ readFile (printf `static/images/flags/%s.svg` .Language.LanguageName) }}{{ .Language.LanguageName }}</option> */}}
+                <option value="{{ .Permalink }}">{{ upper .Language.LanguageName }}</option>
+                {{ end }}
+            {{ end }}
+        </select>
+    </li>
+
+  </ul>
+</div>
+<script>const switchLang = (e) => location.href = e.currentTarget.value;</script>

@@ -1,0 +1,53 @@
+<div class="associates pt-4 pt-md-8 pb-4 pb-md-8">
+
+    {{- with site.Data.trusted_by_logos -}}
+    <section class="trusted">
+        <div class="container">
+            <h2 class="text-center mb-3 font-weight-bold">{{ i18n "trusted_by" }}</h2>
+            <div class="trusted__logo-grid">
+                {{- range . -}}
+                    {{- $res := resources.Get . -}}
+                    <picture>
+                        <source
+                            type="image/webp"
+                            srcset="{{- if gt $res.Width 450 -}}{{ ($res.Resize `450x webp q80`).Permalink }} 450w,{{- end -}}
+                                    {{- if gt $res.Width 750 -}}{{ ($res.Resize `750x webp q80`).Permalink }} 750w,{{- end -}}
+                                    {{- if gt $res.Width 1000 -}}{{ ($res.Resize `1000x webp q80`).Permalink }} 1000w,{{- end -}}
+                                    {{- if gt $res.Width 1200 -}}{{ ($res.Resize `1200x webp q80`).Permalink }} 1200w,{{- end -}}
+                                    {{ ($res.Resize (printf `%dx%d webp q80` $res.Width $res.Height)).Permalink }} {{ $res.Width }}w"
+                            sizes="220px"
+                            >
+                        <img class="img" src="{{ $res.Permalink }}" alt="{{ $res.Name }}" width="{{ $res.Width }}" height="{{ $res.Height }}">
+                    </picture>
+                {{- end -}}
+            </div>
+        </div>
+    </section>
+    {{- end -}}
+
+    {{- with site.Data.partner_logos -}}
+    <section class="partners">
+        <div class="container pt-8">
+            <h2 class="text-center font-weight-bold mb-3">{{ i18n "partners" }}</h2>
+            <div class="partners__logo-grid">
+                {{- range . -}}
+                    {{- $res := resources.Get . -}}
+                    <picture>
+                        <source
+                            type="image/webp"
+                            srcset="{{- if gt $res.Width 450 -}}{{ ($res.Resize `450x webp q80`).Permalink }} 450w,{{- end -}}
+                                    {{- if gt $res.Width 750 -}}{{ ($res.Resize `750x webp q80`).Permalink }} 750w,{{- end -}}
+                                    {{- if gt $res.Width 1000 -}}{{ ($res.Resize `1000x webp q80`).Permalink }} 1000w,{{- end -}}
+                                    {{- if gt $res.Width 1200 -}}{{ ($res.Resize `1200x webp q80`).Permalink }} 1200w,{{- end -}}
+                                    {{ ($res.Resize (printf `%dx%d webp q80` $res.Width $res.Height)).Permalink }} {{ $res.Width }}w"
+                            sizes="220px"
+                            >
+                        <img class="img" src="{{ $res.Permalink }}" alt="{{ $res.Name }}" width="{{ $res.Width }}" height="{{ $res.Height }}">
+                    </picture>
+                {{- end -}}
+            </div>
+        </div>
+    </section>
+    {{- end -}}
+
+</div>

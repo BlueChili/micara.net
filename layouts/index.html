@@ -1,0 +1,76 @@
+{{ define "title" }}{{ .Site.Title }}{{ end}}
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-home{{ end }}
+{{ define "header_classes" }}header-transparent{{ end }}
+
+{{ define "main" }}
+
+<section id="homepagecarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        {{- range $i, $v := .Params.images -}}
+        <li data-target="#homepagecarousel" data-slide-to="{{ $i }}" {{ if eq $i 0 }}class="active"{{ end }}></li>
+        {{- end -}}
+    </ol>
+    <div class="carousel-inner">
+        {{- range $i, $v := .Params.images -}}
+        <div class="carousel-item {{- if eq 0 $i }} active{{ end -}}">
+            {{- partial "img" (dict "src" . "Page" $) -}}
+            {{ with index $.Params.carousel_captions $i }}
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="carousel-caption__content">
+                        {{ with .heading }}<h5>{{ . }}</h5>{{ end }}
+                        {{ with .text }}<p class="d-none d-md-block">{{ . }}</p>{{ end }}
+                        {{ if $.Params.carousel_cta_text }}<a class="carousel__cta" href="{{ default "#" $.Params.carousel_cta_url }}">{{ $.Params.carousel_cta_text }}</a>{{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{- end -}}
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#homepagecarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#homepagecarousel" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </button>
+</section>
+
+{{- partial "partners" -}}
+
+{{ $headless := .Site.GetPage "/homepage" }}
+{{ $reusablePages := $headless.Resources.ByType "page" }}
+{{ $reusablePages := sort $reusablePages ".Params.weight" }}
+
+{{ range $reusablePages }}
+    {{- partial .Params.partial_layout . -}}
+{{ end }}
+
+{{/*
+{{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
+{{if gt (len $services) 0}}
+<div class="container pt-8 pb-8 pb-md-14 pt-md-14">
+    <div class="row justify-content-start">
+        <div class="col-12">
+            <h2 class="text-center mb-3">Our Services</h2>
+        </div>
+        {{ range first 6 (sort $services ".Params.weight") }}
+        <div class="col-12 col-md-4 mb-1">
+            {{ .Render "summary" }}
+        </div>
+        {{ end }}
+        <div class="col-12 text-center">
+            <a class="button button-primary" href="{{ .Site.BaseURL }}services">View All Services</a>
+        </div>
+    </div>
+</div>
+{{end}}
+*/}}
+
+{{ end }}
+
+{{ define "footer_js" }}
+{{ end }}

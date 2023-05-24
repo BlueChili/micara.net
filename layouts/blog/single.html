@@ -1,0 +1,46 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-work-single{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+{{ partial "blog-hero.html" (dict "background" (index .Params.images 0) "heading" .Title "subheading" .Params.heroSubHeading "section" .Section "content" .)}}
+<div class="container pt-4 pt-md-10 pb-4 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+        <nav class="blog-breadcrumbs">
+        {{ range .Ancestors.Reverse }} 
+            <a href="{{ .Permalink }}">{{ if eq .Permalink site.BaseURL }}Micara.net{{ else}}{{ humanize .Section }}{{ end }}</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style=""><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+        {{ end }}
+        <a href="#">{{ truncate 25 .Title }}</a>
+        </nav>
+      <div class="work work-single">
+        <div class="content">{{.Content}}</div>
+      </div>
+    </div>
+    {{ if .Params.images }}
+    <div class="col-12 pt-4 pt-md-10">
+      <h2 class="mb-2 text-uppercase">Gallery</h2>
+      <div class="masonry">
+        {{ range .Params.images }}
+          <div class="work-image item">
+            {{- partial "img" (dict "src" . "Page" $ "sizes" "(max-width: 991px) 33vw, 363px") -}}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
+{{ define "footer_js" }}
+{{ $library := resources.Get "js/libs/library.js" }}
+{{ $services := resources.Get "js/pages/services.js" }}
+{{ $servicesJS := slice $library $services |resources.Concat "js/services.js" }}
+{{ if .Site.IsServer }}
+  <script type="text/javascript" src="{{ $servicesJS.RelPermalink }}"></script>
+  {{ else }}
+  <script type="text/javascript" src="{{ ($servicesJS | minify | fingerprint).RelPermalink }}"></script>
+  {{ end }}
+{{ end }}

@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section id="contact" class="strip bg-cover bg-position-top bg-overlay">
+    <div class="container pt-8">
+        <div class="row">
+            <div class="col-12 contact-content">
+                {{ with .Title }}<h2 class="text-primary text-center text-capitalize mb-4">{{ . }}</h2>{{ end }}
+                <p>{{ .Content }}</p>
+                {{ if .Params.button }}<a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>{{ end }}
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <form id="contact-form" method="{{ site.Params.form_method }}" action="{{ site.Params.form_endpoint }}">
+            <h2>{{ i18n "contact_form_heading" }}</h2>
+            <div class="input-field position-relative">
+                <label for="name">{{ i18n "name" | humanize }}</label>
+                <input type="text" name="name" placeholder="{{ i18n "name" | humanize }}" required>
+            </div>
+            <div class="input-field position-relative">
+                <label for="email">{{ i18n "email" | humanize }}</label>
+                <input type="email" name="email" placeholder="{{ i18n "email" | humanize }}" required>
+            </div>
+            <div class="input-field position-relative">
+                <label for="message">{{ i18n "form_message" | humanize }}</label>
+                <textarea name="message" required></textarea>
+            </div>
+            <input type="submit" value="{{ i18n "contact_form_submit" }}">
+        </form>
+    </div>
+</section>
+{{ end }}

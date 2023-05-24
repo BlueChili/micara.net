@@ -1,0 +1,14 @@
+contact_form_heading: 
+  other: "Get in Touch with us"
+name:
+  other: "name"
+email:
+  other: "email"
+form_message:
+  other: "message"
+contact_form_submit:
+  other: "Send"
+trusted_by:
+  other: "Trusted by"
+partners:
+  other: "Partners"
