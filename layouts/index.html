@@ -39,36 +39,20 @@
     </button>
 </section>
 
+{{ partial "home_section" (dict
+    "id" "homepage_secondary_section"
+    "background" .Params.secondary_section_image
+    "heading" .Params.secondary_section_heading
+    "text" .Params.secondary_section_text
+    "button" .Params.secondary_section_cta_text
+    "buttonLink" .Params.secondary_section_cta_url
+    )}}
 {{- partial "partners" -}}
 
 {{ $headless := .Site.GetPage "/homepage" }}
 {{ $reusablePages := $headless.Resources.ByType "page" }}
 {{ $reusablePages := sort $reusablePages ".Params.weight" }}
 
-{{ range $reusablePages }}
-    {{- partial .Params.partial_layout . -}}
-{{ end }}
-
-{{/*
-{{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
-{{if gt (len $services) 0}}
-<div class="container pt-8 pb-8 pb-md-14 pt-md-14">
-    <div class="row justify-content-start">
-        <div class="col-12">
-            <h2 class="text-center mb-3">Our Services</h2>
-        </div>
-        {{ range first 6 (sort $services ".Params.weight") }}
-        <div class="col-12 col-md-4 mb-1">
-            {{ .Render "summary" }}
-        </div>
-        {{ end }}
-        <div class="col-12 text-center">
-            <a class="button button-primary" href="{{ .Site.BaseURL }}services">View All Services</a>
-        </div>
-    </div>
-</div>
-{{end}}
-*/}}
 
 {{ end }}
 

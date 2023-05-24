@@ -6,6 +6,10 @@ $primary_blue: #7892C2;
   z-index: 100;
   .main-menu ul li a {
     color: $primary_blue;
+    &:hover {
+      color: white;
+      background-color: $primary_blue;
+    }
   }
 }
 
@@ -136,21 +140,21 @@ $primary_blue: #7892C2;
   width: 100%;
   height: auto;
   @media (min-width: 1024px) {
-    position: absolute;
     top: 0;
     object-fit: cover;
-    height: 100%;
-    width: 45vw;
+    height: 50vh;
+    width: 50%;
     box-sizing: border-box;
+    margin: 2rem;
   }
 }
 
 .split-section__image--left {
-  left: 0;
+  float: left;
 }
 
 .split-section__image--right {
-  right: 0;
+  float: right;
 }
 
 ol { list-style-type: decimal; }
@@ -203,10 +207,10 @@ ol { list-style-type: decimal; }
       content: "";
       width: 16px;
       height: 16px;
-      top: calc(50% - 8px);
-      right: 0;
+      top: calc(50% - 10px);
+      right: -2px;
       color: #7892C2;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5' /%3E%3C/svg%3E%0A");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%237892c2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5' /%3E%3C/svg%3E%0A");
       position: absolute;
       z-index: 10;
     }
@@ -278,6 +282,11 @@ ol { list-style-type: decimal; }
   ul li a {
     color: #222;
   }
+}
+
+.footer__logo {
+  width: 100%;
+  height: auto;
 }
 
 .footer {
@@ -405,7 +414,7 @@ body > section:nth-child(even) {
       height: 3rem;
       object-fit: contain;
       flex: 1 0 auto;
-      min-width: 220px;
+      min-width: 250px;
     }
   }
 }
@@ -414,6 +423,9 @@ body > section:nth-child(even) {
   #hero {
     height: auto;
     padding-bottom: clamp(2rem, 5vw, 4rem);
+  }
+  h1 {
+    font-size: clamp(2.5rem, 2.5vw, 3rem) !important;
   }
 }
 
@@ -439,6 +451,30 @@ body > section:nth-child(even) {
       height: 3rem;
       width: 3rem;
       object-position: center;
+    }
+  }
+}
+
+a {
+  color: $primary_blue;
+}
+#homepage-homepage_secondary_section {
+  .row > div {
+    margin-left: 0;
+    max-width: 540px;
+    text-align: left !important;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.2);
+    h2 {
+      text-align: left !important;
+      color: white !important;
+      font-weight: 600;
+    }
+    p {
+      color: white !important;
+    }
+    a {
+      background-color: $primary_blue;
     }
   }
 }

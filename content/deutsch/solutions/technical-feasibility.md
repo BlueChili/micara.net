@@ -1,4 +1,6 @@
 ---
+title: "Technische Machbarkeit für jedes Projekt, das maschinelles Lernen, Datenwissenschaft und Edge-Anwendungen berührt"
+list_title: 'Technical feasibility – how to approach an edge ML project'
 id: 'services-technical'
 weight: 3
 background: ''
@@ -6,11 +8,9 @@ background: ''
 #buttonLink: 'about'
 partial_layout: 'homepage_split_section'
 image: 'images/mahdis-mousavi-hJ5uMIRNg5k-unsplash.jpg'
+icon: 'solutions-icons/feasibility.svg'
+layout: 'custom'
 ---
-### Technische Machbarkeit für jedes Projekt, das maschinelles Lernen, Datenwissenschaft und Edge-Anwendungen berührt 
-
- 
-
 Bei der Bewertung der technischen Durchführbarkeit von Anwendungsfällen des maschinellen Lernens im Edge-Bereich sollten mehrere wichtige Aspekte berücksichtigt werden. Hier sind die wichtigsten zu bewertenden Aspekte: 
 
  

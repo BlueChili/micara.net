@@ -1,7 +1,7 @@
 ---
-id: 'services-ml'
-title: Machine Learning
 list_title: 'Machine Learning on edge devices – IoT & medical wearables '
+id: 'services-ml'
+title: 'Μηχανική μάθηση'
 weight: 4
 background: ''
 #button: 'About Us'

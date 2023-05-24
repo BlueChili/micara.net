@@ -9,10 +9,6 @@ partial_layout: 'homepage_split_section'
 image: 'images/embeddedsystem.jpg'
 alternate: true
 ---
-### Machine Learning 
-
- 
-
 Machine learning is highly relevant for industrial IOT for several reasons: 
 
  

@@ -1,6 +1,7 @@
 ---
 id: 'services-technical'
 title: "Technical feasibility for any project touching Machine Learning, Data Science and Edge applications"
+list_title: 'Technical feasibility – how to approach an edge ML project'
 weight: 3
 background: ''
 #button: 'About Us'

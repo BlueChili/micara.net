@@ -1,5 +1,6 @@
 ---
 id: 'services-ml'
+title: 'Μηχανική μάθηση'
 weight: 4
 background: ''
 #button: 'About Us'
@@ -8,10 +9,6 @@ partial_layout: 'homepage_split_section'
 image: 'images/embeddedsystem.jpg'
 alternate: true
 ---
-### Μηχανική μάθηση
-
- 
-
 Η μηχανική μάθηση είναι ιδιαίτερα σημαντική για τη βιομηχανική IOT για διάφορους λόγους: 
 
  

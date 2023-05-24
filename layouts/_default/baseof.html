@@ -29,11 +29,11 @@
   {{ block "header_css" . }}{{ end }}
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  {{- $font_url := "https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" -}}
+  {{- $font_url := "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" -}}
   {{- $font_cache_key := print $font_url (now.Format "2006-01-02") -}}
   {{- $font := resources.GetRemote $font_url (dict "key" $font_cache_key) -}}
   <style>{{ $font.Content | safeCSS }}</style>
-  <style>* { font-family: 'Source Sans', sans-serif !important; }</style>
+  <style>* { font-family: 'Source Sans Pro', sans-serif !important; }</style>
 </head>
 
 <body class='page {{ block "body_classes" . }}{{ end }}'>

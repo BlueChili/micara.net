@@ -2,10 +2,10 @@
 id: 'about-us'
 title: 'À propos de nous'
 weight: 1
-background: 'images/kevin-bhagat-461952-unsplash.jpg'
+#background: 'images/kevin-bhagat-461952-unsplash.jpg'
 #button: 'Our Work'
 #buttonLink: 'work'
-partial_layout: 'homepage_blue_section'
+partial_layout: 'homepage_white_section'
 layout: custom
 ---
 

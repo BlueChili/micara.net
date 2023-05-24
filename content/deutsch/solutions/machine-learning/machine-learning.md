@@ -1,5 +1,6 @@
 ---
 id: 'services-ml'
+title: 'Maschinelles Lernen'
 weight: 4
 background: ''
 #button: 'About Us'
@@ -8,10 +9,6 @@ partial_layout: 'homepage_split_section'
 image: 'images/embeddedsystem.jpg'
 alternate: true
 ---
-### Maschinelles Lernen
-
- 
-
 Maschinelles Lernen ist für das industrielle IOT aus mehreren Gründen von großer Bedeutung: 
 
  

@@ -1,48 +1,58 @@
 {{- $logo := resources.Get .Site.Params.logo.desktop -}}
 {{- $logo_optimized := $logo.Resize (printf `%dx%d q90 webp Lanczos` $logo.Width $logo.Height) -}}
 <div class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="footer-inner">
-            <img src="{{ $logo_optimized.Permalink }}" alt="">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer-inner">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="{{- if gt $logo.Width 450 -}}{{ ($logo.Resize `450x webp q80`).Permalink }} 450w,{{- end -}}
+                        {{- if gt $logo.Width 750 -}}{{ ($logo.Resize `750x webp q80`).Permalink }} 750w,{{- end -}}
+                        {{- if gt $logo.Width 1000 -}}{{ ($logo.Resize `1000x webp q80`).Permalink }} 1000w,{{- end -}}
+                        {{- if gt $logo.Width 1200 -}}{{ ($logo.Resize `1200x webp q80`).Permalink }} 1200w,{{- end -}}
+                        {{ ($logo.Resize (printf `%dx%d webp q80` $logo.Width $logo.Height)).Permalink }} {{ $logo.Width }}w" sizes="180px">
+                        <img class="footer__logo" src="{{ $logo.Permalink }}" alt="{{ $logo.Name }}" width="{{ $logo.Width }}"
+                            height="{{ $logo.Height }}">
+                    </picture>
 
-<ul class="col-12 flex-column footer-main-menu">
-    {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
-    <li class="">
-      <a href="{{ absLangURL .URL}}">
-        {{ .Pre }}
-        <span>{{ .Name }}</span>
-      </a>
-    </li>
-    {{end}}
-    {{ $pageLang := .Page.Page.Lang}}
-    <li id="footer-lang" class="menu-item">
-        <select name="desktop-lang" onchange="switchLang(event)">
-            {{ range $k, $v := .Page.Page.AllTranslations }}
-                {{ if eq $pageLang .Lang}}
-                <option value="{{ .Permalink }}">{{ upper .Language.LanguageName }}</option>
-                {{ end }}
-            {{ end }}
-            {{ range $k, $v := .Page.Page.AllTranslations }}
-                {{ if ne $pageLang .Lang}}
-                {{/* <option value="{{ .Permalink }}">{{ readFile (printf `static/images/flags/%s.svg` .Language.LanguageName) }}{{ .Language.LanguageName }}</option> */}}
-                <option value="{{ .Permalink }}">{{ upper .Language.LanguageName }}</option>
-                {{ end }}
-            {{ end }}
-        </select>
-    </li>
+                    <ul class="col-12 flex-column footer-main-menu">
+                        {{ $currentPage := . }}
+                        {{ range .Site.Menus.main }}
+                        <li class="">
+                            <a href="{{ absLangURL .URL}}">
+                                {{ .Pre }}
+                                <span>{{ .Name }}</span>
+                            </a>
+                        </li>
+                        {{end}}
+                        {{ $pageLang := .Page.Page.Lang}}
+                        <li id="footer-lang" class="menu-item">
+                            <select name="desktop-lang" onchange="switchLang(event)">
+                                {{ range $k, $v := .Page.Page.AllTranslations }}
+                                {{ if eq $pageLang .Lang}}
+                                <option value="{{ .Permalink }}">{{ upper .Language.LanguageName }}</option>
+                                {{ end }}
+                                {{ end }}
+                                {{ range $k, $v := .Page.Page.AllTranslations }}
+                                {{ if ne $pageLang .Lang}}
+                                {{/* <option value="{{ .Permalink }}">{{ readFile (printf `static/images/flags/%s.svg`
+                                    .Language.LanguageName) }}{{ .Language.LanguageName }}</option> */}}
+                                <option value="{{ .Permalink }}">{{ upper .Language.LanguageName }}</option>
+                                {{ end }}
+                                {{ end }}
+                            </select>
+                        </li>
 
-  </ul>
+                    </ul>
 
-          <ul class="footer-menu">
-            <li><a href="{{ .Site.BaseURL }}">Home</a></li>
-            <li><a href="{{ .Site.BaseURL }}contact">Contact</a></li>
-            <li class="copyright">© {{ now.Format "2006" }} {{.Site.Title}}</li>
-          </ul>
+                    <ul class="footer-menu">
+                        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+                        <li><a href="{{ .Site.BaseURL }}contact">Contact</a></li>
+                        <li class="copyright">© {{ now.Format "2006" }} {{.Site.Title}}</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>

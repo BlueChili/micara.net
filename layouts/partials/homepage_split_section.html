@@ -3,8 +3,8 @@
     <div class="container pt-17 pb-17">
         <div class="row">
             <div class="col-12">
-    {{- if .Params.image }}{{- partial "img" (dict "src" .Params.image "class" "split-section__image--left") -}}{{ end -}}
                 <h2 class="text-primary text-capitalize">{{ .Title }}</h2>
+                {{- if .Params.image }}{{- partial "img" (dict "src" .Params.image "class" "split-section__image--left") -}}{{ end -}}
                 <p>{{ .Content }}</p>
                 {{ if .Params.button }}<a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>{{ end }}
             </div>
@@ -14,8 +14,8 @@
     <div class="container pt-17 pb-17">
         <div class="row">
             <div class="col-12">
-    {{- if .Params.image }}{{- partial "img" (dict "src" .Params.image "class" "split-section__image--right") -}}{{ end -}}
                 <h2 class="text-primary text-capitalize">{{ .Title }}</h2>
+                {{- if .Params.image }}{{- partial "img" (dict "src" .Params.image "class" "split-section__image--right") -}}{{ end -}}
                 <p>{{ .Content }}</p>
                 {{ if .Params.button }}<a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>{{ end }}
             </div>

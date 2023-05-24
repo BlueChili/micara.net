@@ -1,0 +1,12 @@
+<section id="homepage-{{ urlize .id }}" class="strip bg-cover bg-position-top bg-overlay"
+    style="background-image: url('{{ .background | relURL }}');">
+    <div class="container pt-17 pb-17">
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+                {{ with .heading }}<h2 class="text-primary text-center text-capitalize">{{ . }}</h2>{{ end }}
+                <p>{{ .text }}</p>
+                {{ if .button }}<a class="button" href="{{ .buttonLink | relURL }}">{{ .button }}</a>{{ end }}
+            </div>
+        </div>
+    </div>
+</section>

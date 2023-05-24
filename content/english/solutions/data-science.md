@@ -2,6 +2,7 @@
 id: 'services-data-science'
 weight: 6
 Title: Data Science
+list_title: 'Data Science – extract actionable insights from your data'
 background: ''
 #button: 'About Us'
 #buttonLink: 'about'
@@ -9,6 +10,7 @@ partial_layout: 'homepage_split_section'
 image: 'images/lars-kienle-r3pIy-3Xgmg-unsplash.jpg'
 alternate: true
 icon: 'solutions-icons/data-science.svg'
+layout: 'custom'
 ---
 A very short and high level primer is given here for industrial IOT use cases and why Data Science is really important and relevant for a successful project.  
 

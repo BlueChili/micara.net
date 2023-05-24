@@ -8,6 +8,8 @@ background: ''
 partial_layout: 'homepage_split_section'
 image: 'images/anders-j-hxUcl0nUsIY-unsplash.jpg'
 alternate: true
+layout: 'custom'
+icon: 'solutions-icons/renewables.svg'
 ---
 
  

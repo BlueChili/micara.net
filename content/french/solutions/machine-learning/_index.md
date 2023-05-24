@@ -1,7 +1,7 @@
 ---
+title: "Apprentissage automatique"
 id: 'services-ml'
-title: Machine Learning
-list_title: 'Machine Learning on edge devices – IoT & medical wearables '
+title: Machine Learning 
 weight: 4
 background: ''
 #button: 'About Us'

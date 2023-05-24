@@ -15,7 +15,7 @@
                         {{ range . }}
                             <a href="{{ .Permalink }}">
                                 {{ readFile (printf `static/%s` .Params.icon) | safeHTML }}
-                                <p>{{ .Title }}</p>
+                                <p>{{ default .Title .Params.list_title }} - Read more...</p>
                             </a>
                         {{ end }}
                     </div>

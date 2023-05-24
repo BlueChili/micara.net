@@ -1,4 +1,6 @@
 ---
+list_title: 'Embedded Development – ML for edge devices'
+title: "Ενσωματωμένη ανάπτυξη συσκευών άκρων"
 id: 'services-embed-dev'
 weight: 7
 background: ''
@@ -6,12 +8,9 @@ background: ''
 #buttonLink: 'about'
 partial_layout: 'homepage_split_section'
 image: 'images/embeddedsystem.jpg'
+icon: 'solutions-icons/embedded.svg'
+layout: 'custom'
 ---
-
-### Ενσωματωμένη ανάπτυξη συσκευών άκρων
-
- 
-
 #### Ενσωματωμένη ανάπτυξη 
 
  

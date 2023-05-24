@@ -1,4 +1,5 @@
 ---
+title: "Erneuerbare Energien"
 id: 'services-renewable-energies'
 weight: 8
 background: ''
@@ -7,12 +8,9 @@ background: ''
 partial_layout: 'homepage_split_section'
 image: 'images/anders-j-hxUcl0nUsIY-unsplash.jpg'
 alternate: true
+layout: 'custom'
+icon: 'solutions-icons/renewables.svg'
 ---
-
-### Erneuerbare Energien 
-
- 
-
 Unser Geschäftsführer Mihajlo ist bereits seit 2009 in verschiedenen Funktionen in diesem Bereich tätig. Daher gibt es eine Menge Leidenschaft für dieses Thema mit laufenden Engagements.  
 
  

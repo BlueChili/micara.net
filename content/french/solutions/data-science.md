@@ -1,4 +1,6 @@
 ---
+list_title: 'Data Science – extract actionable insights from your data'
+title: "Science des données"
 id: 'services-data-science'
 weight: 6
 background: ''
@@ -7,11 +9,9 @@ background: ''
 partial_layout: 'homepage_split_section'
 image: 'images/lars-kienle-r3pIy-3Xgmg-unsplash.jpg'
 alternate: true
+icon: 'solutions-icons/data-science.svg'
+layout: 'custom'
 ---
-### Science des données 
-
- 
-
 Une introduction très courte et de haut niveau est donnée ici pour les cas d'utilisation industrielle de l'IOT et pourquoi la science des données est vraiment importante et pertinente pour un projet réussi.  
 
 La science des données joue un rôle crucial dans l'Internet industriel des objets (IIoT) en permettant aux organisations d'extraire des informations précieuses des vastes quantités de données générées par les capteurs, les dispositifs et les équipements industriels. Voici quelques rôles clés de la science des données dans l'IIoT : 

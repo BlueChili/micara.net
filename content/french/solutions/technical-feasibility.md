@@ -1,4 +1,6 @@
 ---
+list_title: 'Technical feasibility – how to approach an edge ML project'
+title: "Faisabilité technique pour tout projet touchant à l'apprentissage automatique, à la science des données et aux applications de pointe."
 id: 'services-technical'
 weight: 3
 background: ''
@@ -6,11 +8,9 @@ background: ''
 #buttonLink: 'about'
 partial_layout: 'homepage_split_section'
 image: 'images/mahdis-mousavi-hJ5uMIRNg5k-unsplash.jpg'
+icon: 'solutions-icons/feasibility.svg'
+layout: 'custom'
 ---
-### Faisabilité technique pour tout projet touchant à l'apprentissage automatique, à la science des données et aux applications de pointe. 
-
- 
-
 Lors de l'évaluation de la faisabilité technique des cas d'utilisation de l'apprentissage automatique en périphérie, plusieurs aspects clés doivent être pris en compte. Voici les principaux aspects à évaluer : 
 
  

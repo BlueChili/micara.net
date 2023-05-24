@@ -2,15 +2,16 @@
 id: 'privacy'
 title: 'Privacy'
 weight: 11
-background: 'images/kevin-bhagat-461952-unsplash.jpg'
+#background: 'images/kevin-bhagat-461952-unsplash.jpg'
 #button: 'Our Work'
 #buttonLink: 'work'
-partial_layout: 'homepage_blue_section'
+partial_layout: 'homepage_white_section'
+layout: 'custom'
 ---
 
 Thank you for visiting our website. The safe handling of your data is particularly important to us. We would therefore like to inform you in detail about the use of your data when visiting our website. 
 
-Legal basis of processing
+**Legal basis of processing**
 
 Art. 6 para. 1 lit. a DSGVO serves our company as the legal basis for processing operations in which we obtain consent for a specific processing purpose. If the processing of personal data is necessary for the performance of a contract to which the data subject is a party, as is the case, for example, with processing operations that are necessary for a delivery of goods or the provision of another service or consideration, the processing is based on Article 6 (S) 1 lit. b DSGVO. The same applies to such processing operations that are necessary for the implementation of pre-contractual measures, for example in cases of inquiries about our products or services. If our company is subject to a legal obligation by which the processing of personal data becomes necessary, such as for the fulfillment of tax obligations, the processing is based on Art. 6 para. p. 1 lit. c DSGVO. In rare cases, the processing of personal data might become necessary to protect vital interests of the data subject or another natural person, Art. 6 para. p. 1 lit. d DSGVO. Finally, processing operations could also be based on Article 6 (1) (f) of the GDPR. Processing operations that are not covered by any of the aforementioned legal bases are based on this legal basis if the processing is necessary to protect a legitimate interest of our company or a third party, provided that the interests, fundamental rights and freedoms of the data subject are not overridden. 
 
@@ -24,7 +25,7 @@ Lohstr. 24
 
 or alternatively you can write an email to datenschutz (ät) micara.net. 
 
-Data sharing 
+**Data sharing**
 
 We do not transfer your personal data to third parties for purposes other than those listed below. We will only disclose your personal data to third parties if: 
 
@@ -36,7 +37,7 @@ in the event that a legal obligation exists for the disclosure pursuant to Art. 
 
 this is legally permissible and necessary according to Art. 6 para. 1 p. 1 lit. b DSGVO for the processing of contractual relationships with you. 
 
-Data subject rights 
+**Data subject rights**
 
 You have that right: 
 
@@ -54,44 +55,39 @@ to revoke your consent at any time in accordance with Art. 7 (3) DSGVO. This has
 
 pursuant to Article 77 of the GDPR, you have the right to lodge a complaint with a supervisory authority, without prejudice to any other administrative or judicial remedy. As a rule, you can contact the supervisory authority of your usual place of residence or place of work or the place of the alleged infringement for this purpose, if the data subject believes that the processing of personal data concerning him or her violates the EU General Data Protection Regulation (GDPR). 
 
-Right of withdrawal 
+**Right of withdrawal**
 
 If your personal data is processed on the basis of legitimate interests, you have the right to object to the processing of your personal data pursuant to Art. 21 DSGVO, provided that there are grounds for doing so that arise from your particular situation or the objection is directed against direct marketing. In the latter case, you have a general right of objection, which is implemented by us without specifying a particular situation. If you wish to exercise your right of revocation or objection, an e-mail to datenschutz (ät) micara.net is sufficient. 
 
-General collection of data 
+**General collection of data**
 
 When you access our website or retrieve a file, data about this process is stored in a log file on our web server. In detail, the following data may be stored: 
 
-IP address (if possible, this is stored anonymously) 
-
-Names of the retrieved files 
-
-Date and time of a retrieval 
-
-Name of your Internet Service Provider 
-
-as well as operating system and browser version of your end device, if applicable. 
+* IP address (if possible, this is stored anonymously) 
+* Names of the retrieved files 
+* Date and time of a retrieval 
+* Name of your Internet Service Provider 
+* as well as operating system and browser version of your end device, if applicable. 
 
 We store IP addresses only for data security reasons to ensure the stability and security of our system (legal basis: Art. 6 para. 1 lit. f DSGVO). The statistical evaluation of anonymized data records remains reserved. 
 
-Cookies 
+**Cookies**
 
 Our website uses cookies. A cookie is a text file that is created when a website is visited and is temporarily stored on the website user's system. If the server of our website is called up again by the user of the website, the browser of the user of the website sends the previously received cookie back to the server. The server can evaluate the information obtained through this process. Cookies can be used, for example, to control advertising or to make it easier to navigate a website. Cookies are also necessary to enable the functionality of our website operation (as a legal basis is Art. 6 para. 1 lit f DSGVO mentioned, the protection of the legitimate interests of the operator of this website - we use cookies only in agreement with Art. 5 para. 1 lit a DSGVO, i.e. in accordance with the principles of "lawfulness, processing in good faith, transparency"). 
 If you wish to prevent the use of cookies, you can do so through local settings in your Internet browser, (e.g. Internet Explorer, Mozilla Firefox, Opera or Safari). 
 
-Contact forms 
+**Contact forms**
 
 If you send us inquiries via the contact form, your data from the inquiry form, including the contact data you provided there, will be stored and processed by us for the purpose of processing the inquiry and in case of follow-up questions. Your data will be used exclusively for the purpose of answering and processing your question. The data processing is carried out here according to Art. 6 para. p. 1 lit. a DSGVO on the basis of your voluntarily given consent. You can object to this at any time (right of revocation). 
 
-Google Maps 
+**Google Maps**
 
 This website uses the mapping software Google Maps from Google Inc, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. By using this website, you consent to the collection, processing and use of data that may be automatically collected by Google and its agents. 
 
-Google Maps Terms of Use 
+* Google Maps Terms of Use 
+* Privacy policy of Google 
 
-Privacy policy of Google 
-
-Google Analytics 
+**Google Analytics**
 
 Our website uses the Google Analytics analysis service. This web analytics service is operated by Google Inc, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA (hereinafter referred to as Google). We use Google Analytics to evaluate your use of our website and to compile reports on user activities. Our legitimate interest in data processing also lies in these purposes. The legal basis for the use of Google Analytics is § 15 para. 3 TMG or Art. 6 para. 1 lit. f DSGVO. This analysis tool works on the basis of cookies. A cookie is a text file that is sent when you visit a website and is temporarily stored on the hard drive of the user of the website to enable an analysis of your use of the website. The information stored by the cookie is usually transferred to a Google server in the USA and then stored there. Within the scope of IP anonymization, your IP address will be shortened beforehand by Google within a member state of the EU or another state party to the Agreement on the European Economic Area. On our behalf, Google will use the transmitted information to compile a report on the use of the website. We have concluded an order processing agreement with Google. The IP address transmitted as part of Google Analytics will not be merged with other data from Google. If you wish to prevent the use of cookies, you can do so by locally making changes to your settings in the Internet browser used on your computer (e.g. Safari, Internet Explorer, Opera, Firefox, etc.), i.e. the program used to open and display Internet pages. Furthermore, you can prevent the collection and processing of your data by the cookie from Google, by downloading and installing a browser plugin offered by Google under the following link: http://tools.google.com/dlpage/gaoptout?hl=de. 
 
@@ -105,49 +101,49 @@ By integrating the plugins, the social networks receive the information that you
 
 The purpose and scope of the data collection and the further processing and use of the data by the social networks, as well as your rights in this regard and setting options for protecting your privacy, can be found in the corresponding data protection information. 
 
-Links to third party websites 
+**Links to third party websites**
 
 On this website, references to third party websites are offered in the form of so-called links or linkings. Only when you click on such a link, data is transferred to the link destination. This is technically necessary. The transmitted data are in particular: Your IP address, the time at which you clicked on the link, the page on which you clicked on the link, information about your Internet browser. If you do not want this data to be transferred to the link destination, do not click on the link. 
 
-Links to other websites 
+**Links to other websites**
 
 Our website/app may from time to time contain links to third party websites or to other websites of ours. If you follow a link to one of these websites, please be aware that these websites have their own privacy policies and that we do not accept any responsibility or liability for these policies. Please review this privacy policy before submitting any personal information to these websites. 
 
-Newsletter 
+**Newsletter**
 
 If you subscribe to one of our newsletters, you must provide your email address. Via a double opt-in procedure, we ensure that the subscription to the newsletter is desired for the specified mail address. After confirmed registration to the newsletter you will receive to your specified mail address in irregular intervals interesting information that thematically fit to this website. You can unsubscribe from the newsletter by clicking on an unsubscribe link in each newsletter mail and thus revoking your consent. You can also do this by sending us a message from your email address registered for the newsletter to datenschutz (ät) micara.net. We will not share your email address or any other data you provide with third parties without your permission. 
 
-Copyright 
+**Copyright**
 
 All texts, images, graphics, sound, video or other image representations and their arrangement on the pages are subject to copyright protection and other protective laws. The contents of these websites may not be copied, distributed, modified or made accessible to third parties for commercial purposes without our express consent. We point out that images contained on the websites may be subject to the copyright of third parties. 
 
-Trademark 
+**Trademark**
 
 Unless expressly stated otherwise, all trademarks on these websites are protected in favor of Micara UG. This applies in particular to trademarks, type designations, logos and emblems. 
 
-Confidentiality of your customer access 
+**Confidentiality of your customer access**
 
 If you have been given access to a restricted area on our website that is secured by a password, you are responsible for keeping that password confidential. We ask you not to share the password with anyone. 
 
-Right to data portability 
+**Right to data portability**
 
 You have the right to receive the personal data concerning you that you have provided to us in a structured, common and machine-readable format. 
 
-Right to complain to a supervisory authority 
+**Right to complain to a supervisory authority**
 
 Without prejudice to any other administrative or judicial remedy, every data subject shall have the right to lodge a complaint with a supervisory authority, in particular in the Member State of his or her residence, place of work or the place of the alleged infringement, if the data subject considers that the processing of personal data relating to him or her infringes the EU General Data Protection Regulation (GDPR). 
 
-Safety note 
+**Safety note**
 
 We secure our website and other IT systems through appropriate technical and organizational measures against loss, destruction, unauthorized access, unauthorized modification or unauthorized disclosure of your data. However, complete protection against all dangers is practically not possible in every case despite all care. Because we cannot guarantee complete data security when communicating by e-mail, we recommend sending confidential information by post. 
 
-Changes to this privacy policy 
+**Changes to this privacy policy**
 
 We reserve the right to change this privacy policy if the legal situation or this online offer or the type of data collection changes. However, this only applies with regard to declarations on data processing. If the user's consent is required or components of the data protection declaration contain a regulation of the contractual relationship with users, the data protection declaration will only be changed after the user's consent. 
 
 Therefore, please inform yourself about this privacy policy if necessary, especially if you provide personal data. 
 
-Your contact 
+**Your contact**
 
 If you have any questions regarding the collection, processing or use of your personal data, for information, correction, blocking or deletion of data, as well as revocation of consent given or objection to a particular use of data, please contact us directly: 
 
@@ -158,6 +154,6 @@ Lohstr. 24
 
 or alternatively you can write an email to datenschutz (ät) micara.net. 
 
-Objection advertising e-mails 
+**Objection advertising e-mails**
 
 The use of contact data (published within the framework of the imprint obligation) for sending unsolicited advertising and information is hereby prohibited. The site operator reserves the right to take legal action in the event of unsolicited sending of advertising information, in particular spam e-mails.

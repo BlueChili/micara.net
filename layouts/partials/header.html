@@ -4,10 +4,36 @@
 <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="{{ absLangURL "/" }}"><img height={{ .Site.Params.logo.desktop_height }} width={{ .Site.Params.logo.mobile_width }} alt="{{ .Site.Params.logo.alt }}" src="{{ $logo_optimized.Permalink }}" /></a>
+      <a href="{{ absLangURL "/" }}">
+        <picture>
+            <source
+                type="image/webp"
+                srcset="{{- if gt $logo.Width 450 -}}{{ ($logo.Resize `450x webp q80`).Permalink }} 450w,{{- end -}}
+                        {{- if gt $logo.Width 750 -}}{{ ($logo.Resize `750x webp q80`).Permalink }} 750w,{{- end -}}
+                        {{- if gt $logo.Width 1000 -}}{{ ($logo.Resize `1000x webp q80`).Permalink }} 1000w,{{- end -}}
+                        {{- if gt $logo.Width 1200 -}}{{ ($logo.Resize `1200x webp q80`).Permalink }} 1200w,{{- end -}}
+                        {{ ($logo.Resize (printf `%dx%d webp q80` $logo.Width $logo.Height)).Permalink }} {{ $logo.Width }}w"
+                sizes="180px"
+                >
+            <img src="{{ $logo.Permalink }}" alt="{{ $logo.Name }}" width="{{ $logo.Width }}" height="{{ $logo.Height }}">
+        </picture>
+      </a>
     </div>
     <div class="logo-mobile">
-      <a href="{{ absLangURL "/" }}"><img height={{ .Site.Params.logo.mobile_height }} width={{ .Site.Params.logo.mobile_width }} alt="{{ .Site.Params.logo.alt }}" src="{{ $logo_optimized.Permalink }}" /></a>
+      <a href="{{ absLangURL "/" }}">
+        <picture>
+            <source
+                type="image/webp"
+                srcset="{{- if gt $logo.Width 450 -}}{{ ($logo.Resize `450x webp q80`).Permalink }} 450w,{{- end -}}
+                        {{- if gt $logo.Width 750 -}}{{ ($logo.Resize `750x webp q80`).Permalink }} 750w,{{- end -}}
+                        {{- if gt $logo.Width 1000 -}}{{ ($logo.Resize `1000x webp q80`).Permalink }} 1000w,{{- end -}}
+                        {{- if gt $logo.Width 1200 -}}{{ ($logo.Resize `1200x webp q80`).Permalink }} 1200w,{{- end -}}
+                        {{ ($logo.Resize (printf `%dx%d webp q80` $logo.Width $logo.Height)).Permalink }} {{ $logo.Width }}w"
+                sizes="180px"
+                >
+            <img src="{{ $logo.Permalink }}" alt="{{ $logo.Name }}" width="{{ $logo.Width }}" height="{{ $logo.Height }}">
+        </picture>
+      </a>
     </div>
     {{ partial "main-menu.html" . }}
     {{ partial "hamburger.html" . }}

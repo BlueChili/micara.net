@@ -1,4 +1,5 @@
 ---
+title: "Énergies renouvelables"
 id: 'services-renewable-energies'
 weight: 8
 background: ''
@@ -7,12 +8,9 @@ background: ''
 partial_layout: 'homepage_split_section'
 image: 'images/anders-j-hxUcl0nUsIY-unsplash.jpg'
 alternate: true
+layout: 'custom'
+icon: 'solutions-icons/renewables.svg'
 ---
-
-### Énergies renouvelables
-
-
-
 Notre directeur général, Mihajlo, est actif dans ce domaine depuis 2009, où il a occupé diverses fonctions. Il est donc passionné par ce sujet et s'y consacre en permanence.  
 
 

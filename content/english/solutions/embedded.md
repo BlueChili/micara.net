@@ -2,12 +2,14 @@
 id: 'services-embed-dev'
 weight: 7
 title: "Embedded development of edge devices"
+list_title: 'Embedded Development – ML for edge devices'
 background: ''
 #button: 'About Us'
 #buttonLink: 'about'
 partial_layout: 'homepage_split_section'
 image: 'images/embeddedsystem.jpg'
 icon: 'solutions-icons/embedded.svg'
+layout: 'custom'
 ---
 
 #### Embedded Development 

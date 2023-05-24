@@ -1,4 +1,6 @@
 ---
+list_title: 'Technical feasibility – how to approach an edge ML project'
+title: "Τεχνική σκοπιμότητα για κάθε έργο που αγγίζει τη μηχανική μάθηση, την επιστήμη των δεδομένων και τις εφαρμογές Edge"
 id: 'services-technical'
 weight: 3
 background: ''
@@ -6,10 +8,9 @@ background: ''
 #buttonLink: 'about'
 partial_layout: 'homepage_split_section'
 image: 'images/mahdis-mousavi-hJ5uMIRNg5k-unsplash.jpg'
+icon: 'solutions-icons/feasibility.svg'
+layout: 'custom'
 ---
-### Τεχνική σκοπιμότητα για κάθε έργο που αγγίζει τη μηχανική μάθηση, την επιστήμη των δεδομένων και τις εφαρμογές Edge
- 
-
 Κατά την αξιολόγηση της τεχνικής εφικτότητας των περιπτώσεων χρήσης της μηχανικής μάθησης στην άκρη, πρέπει να λαμβάνονται υπόψη διάφορες βασικές πτυχές. Ακολουθούν οι κορυφαίες πτυχές που πρέπει να αξιολογηθούν: 
 
  

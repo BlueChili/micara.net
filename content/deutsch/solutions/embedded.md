@@ -1,4 +1,6 @@
 ---
+title: "Eingebettete Entwicklung von Edge-Geräten"
+list_title: 'Embedded Development – ML for edge devices'
 id: 'services-embed-dev'
 weight: 7
 background: ''
@@ -6,15 +8,10 @@ background: ''
 #buttonLink: 'about'
 partial_layout: 'homepage_split_section'
 image: 'images/embeddedsystem.jpg'
+icon: 'solutions-icons/embedded.svg'
+layout: 'custom'
 ---
-
-### Eingebettete Entwicklung von Edge-Geräten
-
- 
-
 #### Eingebettete Entwicklung 
-
- 
 
 Die Entwicklung von eingebetteter Software ist heute eines der anspruchsvollsten Gebiete der Softwaretechnik. Da sich die Innovationen in vielen Branchen, die traditionell im Maschinenbau angesiedelt sind (z. B. Automobilbau oder Luft- und Raumfahrt), immer mehr von mechanischen Lösungen auf elektronische und computergesteuerte Funktionen verlagern, erweist sich eingebettete Software als eines der vielversprechendsten Anwendungsgebiete für die Softwaretechnik. In der Automobilindustrie beispielsweise wurden in den letzten Jahren 90 Prozent aller Innovationen bei neuen Modellen von der Elektronik vorangetrieben. 
 

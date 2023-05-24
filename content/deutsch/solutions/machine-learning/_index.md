@@ -1,6 +1,6 @@
 ---
 id: 'services-ml'
-title: Machine Learning
+title: Maschinelles Lernen
 list_title: 'Machine Learning on edge devices – IoT & medical wearables '
 weight: 4
 background: ''

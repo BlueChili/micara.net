@@ -1,4 +1,6 @@
 ---
+title: Datenwissenschaft 
+list_title: 'Data Science – extract actionable insights from your data'
 id: 'services-data-science'
 weight: 6
 background: ''
@@ -7,11 +9,9 @@ background: ''
 partial_layout: 'homepage_split_section'
 image: 'images/lars-kienle-r3pIy-3Xgmg-unsplash.jpg'
 alternate: true
+icon: 'solutions-icons/data-science.svg'
+layout: 'custom'
 ---
-### Datenwissenschaft 
-
- 
-
 Hier wird ein sehr kurzer und umfassender Überblick über industrielle IOT-Anwendungsfälle gegeben und erklärt, warum Data Science für ein erfolgreiches Projekt wirklich wichtig und relevant ist.  
 
 Data Science spielt eine entscheidende Rolle im Industrial Internet of Things (IIoT), indem es Unternehmen ermöglicht, wertvolle Erkenntnisse aus den riesigen Datenmengen zu gewinnen, die von industriellen Sensoren, Geräten und Anlagen erzeugt werden. Hier sind einige Schlüsselrollen der Datenwissenschaft im IIoT: 

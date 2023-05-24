@@ -8,10 +8,6 @@ partial_layout: 'homepage_split_section'
 image: 'images/embeddedsystem.jpg'
 alternate: true
 ---
-### Apprentissage automatique  
-
- 
-
 L'apprentissage automatique est très important pour l'IOT industriel, et ce pour plusieurs raisons : 
 
  

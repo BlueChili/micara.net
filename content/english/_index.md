@@ -16,4 +16,10 @@ carousel_captions: [
     { heading: "slide 2", text: "This is the smaller text line below the heading" },
     { heading: "slide 3", text: "This is the smaller text line below the heading" }
 ]
+
+secondary_section_heading: 'Internet of thigns IoT'
+secondary_section_text: 'Solutions at your fingertips'
+secondary_section_cta_url: '/solutions'
+secondary_section_cta_text: 'Check our solutions'
+secondary_section_image: 'google-deepmind-ggeXPf_ykAU-unsplash.jpg'
 ---

@@ -1,4 +1,5 @@
 ---
+title: "Ανανεώσιμες πηγές ενέργειας"
 id: 'services-renewable-energies'
 weight: 8
 background: ''
@@ -7,12 +8,9 @@ background: ''
 partial_layout: 'homepage_split_section'
 image: 'images/anders-j-hxUcl0nUsIY-unsplash.jpg'
 alternate: true
+layout: 'custom'
+icon: 'solutions-icons/renewables.svg'
 ---
-
-### Ανανεώσιμες πηγές ενέργειας  
-
- 
-
 Ο διευθύνων σύμβουλός μας, Mihajlo, δραστηριοποιείται στον τομέα αυτό από το 2009 σε διάφορες θέσεις. Ως εκ τούτου, υπάρχει μεγάλο πάθος για το θέμα αυτό με συνεχείς δεσμεύσεις.  
 
  
