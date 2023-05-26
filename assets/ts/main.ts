@@ -23,8 +23,43 @@ const homepageCarouselSlides = document.querySelectorAll('#homepagecarousel .car
 homepageCarouselSlides.forEach((slide) => carouselObserver.observe(slide));
 
 const submit_form = (event) => {
-  console.log(event);
-
+  event.preventDefault();
+  const form = event.target.closest('form');
+  const formData = new FormData(form);
+  if (formData.get('honeypot')) return;
+  const data = {
+    name: formData.get('name'),
+    email: formData.get('email'),
+    honeypot: formData.get('honeypot'),
+    accessKey: formData.get('accessKey'),
+    message: formData.get('message')
+  }
+  fetch(form.action, {
+    method: form.method,
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    }
+  })
+  .then(res => {
+    if (res.status === 200) {
+      form.reset();
+      const toast = document.querySelector('.contact-success')
+      toast?.classList.add('reveal');
+      toast?.addEventListener('animationend', (event) => {
+        if (event.animationName === 'hide-success-toast') {
+          toast.remove()
+        }
+        setTimeout(() => {
+          toast.classList.add('destroy');
+        }, 3500);
+      })
+    }
+  })
+  .catch(err => {
+    console.error(err);
+  })
 }
 
-document.querySelector('#contact_form_submit')?.addEventListener('click', submit_form);
+document.querySelector('#contact-form')?.addEventListener('submit', submit_form);

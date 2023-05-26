@@ -1,7 +1,3 @@
-{{ define "header_js" }}
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-hcaptcha"></script>
-{{ end }}
-
 {{ define "main" }}
 <section id="contact" class="strip bg-cover bg-position-top bg-overlay">
     <div class="heading-bg w-100 pt-4 pb-4">
@@ -27,27 +23,13 @@
                 <label for="email">{{ i18n "email" | humanize }}</label>
                 <input type="email" name="email" placeholder="{{ i18n " email" | humanize }}" required>
             </div>
+            <input type="text" name="honeypot" style="display:none">
+            <input type="hidden" name="accessKey" value="{{ site.Params.staticforms_site_key }}">
             <div class="input-field position-relative">
                 <label for="message">{{ i18n "form_message" | humanize }}</label>
                 <textarea name="message" required></textarea>
             </div>
             <input id="contact_form_submit" class="submit" type="submit" value="{{ i18n "contact_form_submit" }}">
-
-
-            <h-captcha id="signupCaptcha" site-key="{{ site.Params.hcaptcha_site_key }}" size="normal" tabindex="0"
-                style="text-align: center; display: block; margin-top: 2rem;"></h-captcha>
-
-            <script>
-                const signupCaptcha = document.getElementById('signupCaptcha');
-
-                signupCaptcha.addEventListener('verified', (e) => {
-                    console.log('verified event', {token: e.token});
-                });
-                signupCaptcha.addEventListener('error', (e) => {
-                    console.log('error event', {error: e.error});
-                });
-            </script>
-
         </form>
     </div>
 </section>
@@ -56,6 +38,5 @@
     <div class="success-toast">
         <p>{{ .Params.success_message }}</p>
     </div>
-
 </div>
 {{ end }}

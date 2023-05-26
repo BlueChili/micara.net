@@ -7,9 +7,11 @@ theme = "hugo-hero-theme"
 
 [markup.goldmark.renderer]
   unsafe = true
+
 [params]
+  staticforms_site_key = "b1695189-d62b-497b-85a1-d0fe9571c6b6"
   form_method = "POST"
-  form_endpoint = ""
+  form_endpoint = "https://api.staticforms.xyz/submit"
   google_analytics_id=""
 
   [params.logo]
@@ -52,3 +54,5 @@ defaultContentLanguage = 'en'
   contentDir = "content/greek"
   description = "Επίσημος ιστότοπος Micara.net"
   weight = 4
+
+timeout = "50s"
