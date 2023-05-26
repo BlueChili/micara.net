@@ -26,6 +26,23 @@
                 <label for="message">{{ i18n "form_message" | humanize }}</label>
                 <textarea name="message" required></textarea>
             </div>
+            <script src="https://cdn.jsdelivr.net/npm/vanilla-hcaptcha"></script>
+
+<h-captcha id="signupCaptcha"
+           site-key="781559eb-513a-4bae-8d29-d4af340e3624"
+           size="normal"
+           tabindex="0"></h-captcha>
+
+<script>
+    const signupCaptcha = document.getElementById('signupCaptcha');
+
+    signupCaptcha.addEventListener('verified', (e) => {
+        console.log('verified event', {token: e.token});
+    });
+    signupCaptcha.addEventListener('error', (e) => {
+        console.log('error event', {error: e.error});
+    });
+</script>
             <input class="submit" type="submit" value="{{ i18n "contact_form_submit" }}">
         </form>
     </div>

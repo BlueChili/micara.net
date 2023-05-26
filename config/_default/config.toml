@@ -8,6 +8,8 @@ theme = "hugo-hero-theme"
 [markup.goldmark.renderer]
   unsafe = true
 [params]
+  form_method = "POST"
+  form_endpoint = ""
   google_analytics_id=""
 
   [params.logo]
