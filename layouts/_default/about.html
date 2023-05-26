@@ -1,10 +1,19 @@
 {{ define "main" }}
-<div id="homepage-{{ urlize .Params.id }}" class="strip bg-primary bg-cover bg-position-top bg-overlay"
+<div id="about-us heading" class="strip bg-cover bg-position-top bg-overlay heading-bg"
     style='background-image: url("{{ .Params.background | relURL }}");'>
-    <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
+    <div class="container pt-4 pb-4">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-8 text-white">
-                {{ with .Title }}<h2 class="text-center">{{ . }}</h2>{{ end }}
+            <div class="col-12 col-md-8">
+                {{ with .Title }}<h2 class="text-center text-white">{{ . }}</h2>{{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+<div id="homepage-{{ urlize .Params.id }}" class="strip bg-cover bg-position-top bg-overlay"
+    style='background-image: url("{{ .Params.background | relURL }}");'>
+    <div class="container pt-4 pb-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
                 {{ .Content }}
                 {{ if .Params.button }}<a class="button button-white" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>{{ end }}
             </div>

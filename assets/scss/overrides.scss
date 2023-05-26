@@ -1,4 +1,13 @@
-$primary_blue: #7892C2;
+$primary_blue: #7792C2;
+$bg_gray: #eaeaea;
+$bg_heading_gradient: linear-gradient(90deg, #7792c2, #34a853);
+
+.button {
+  background: $primary_blue;
+  &:hover { background: darken($primary_blue, 15%); }
+}
+
+.heading-bg { background: $bg_heading_gradient !important; }
 
 .header {
   position: sticky;
@@ -13,9 +22,7 @@ $primary_blue: #7892C2;
   }
 }
 
-.logo-mobile {
-  width: 120px;
-}
+.logo-mobile { width: 120px; }
 
 #homepagecarousel {
   .carousel-inner {
@@ -49,9 +56,7 @@ $primary_blue: #7892C2;
     }
   }
 
-  .carousel-indicators li {
-    cursor: pointer;
-  }
+  .carousel-indicators li { cursor: pointer; }
 
   .carousel-item.active .img {
     animation: 5.5s ease-out forwards slideZoom;
@@ -107,6 +112,8 @@ $primary_blue: #7892C2;
     }
   }
   &-about-us {
+    background: $bg_gray;
+
     img {
       width: max-content;
       max-width: 100%;
@@ -164,12 +171,12 @@ ol { list-style-type: decimal; }
 }
 
 .hero-image, .bg-primary {
-  background-color: #1f80e6 !important;
+  background: $bg_heading_gradient !important;
 }
 
-.bg-overlay {
-  background-blend-mode: color-burn;
-}
+.hero-image { padding-top: 0; }
+
+.bg-overlay { background-blend-mode: color-burn; }
 
 #mobile-lang {
   position: relative;
@@ -192,6 +199,9 @@ ol { list-style-type: decimal; }
     background: white;
     color: $primary_blue;
   }
+}
+.main-menu-mobile {
+  background-color: $primary_blue;
 }
 .main-menu-mobile.open {
   #mobile-lang {
@@ -277,10 +287,17 @@ ol { list-style-type: decimal; }
   }
 }
 
+#footer-lang {
+  select {
+    font-weight: 600;
+  }
+}
+
 .footer {
   background-color: #efefef;
   ul li a {
-    color: #222;
+    color: black;
+    font-weight:400;
   }
 }
 
@@ -344,11 +361,11 @@ ol { list-style-type: decimal; }
   }
 }
 .split-section--bg{
-  background-color: #eaeaea;
+  background-color: $bg_gray;
 }
 
 body > section:nth-child(even) {
-  background-color: #eaeaea;
+  background-color: $bg_gray;
 }
 
 #contact {
@@ -420,13 +437,8 @@ body > section:nth-child(even) {
 }
 
 .page-blog-list {
-  #hero {
-    height: auto;
-    padding-bottom: clamp(2rem, 5vw, 4rem);
-  }
-  h1 {
-    font-size: clamp(2.5rem, 2.5vw, 3rem) !important;
-  }
+  #hero { height: auto; }
+  h1 { font-size: 2.5rem !important; }
 }
 
 #solutions-list {
@@ -478,3 +490,26 @@ a {
     }
   }
 }
+
+.hamburger .hamburger-box .hamburger-inner {
+  background: $primary_blue;
+  &::after, &::before {
+    background: $primary_blue;
+  }
+}
+
+#hero {
+  background: $bg_heading_gradient;
+}
+#heptacycle {
+  position: relative;
+}
+.heptacycle {
+  max-width: 750px;
+  object-fit: contain;
+  display: block;
+  height: auto;
+  margin-inline: auto;
+}
+
+

@@ -39,14 +39,32 @@
     </button>
 </section>
 
-{{ partial "home_section" (dict
-    "id" "homepage_secondary_section"
-    "background" .Params.secondary_section_image
-    "heading" .Params.secondary_section_heading
-    "text" .Params.secondary_section_text
-    "button" .Params.secondary_section_cta_text
-    "buttonLink" .Params.secondary_section_cta_url
-    )}}
+<section id="heptacycle" class="strip bg-cover bg-position-top bg-overlay">
+    <div class="container pt-6 pb-6">
+        {{ with .Resources.GetMatch .Params.secondary_section_image }}
+        <picture>
+            <source
+                type="image/webp"
+                srcset="{{- if gt .Width 450 -}}{{ (.Resize `450x webp q80`).Permalink }} 450w,{{- end -}}
+                        {{- if gt .Width 750 -}}{{ (.Resize `750x webp q80`).Permalink }} 750w,{{- end -}}
+                        {{- if gt .Width 1000 -}}{{ (.Resize `1000x webp q80`).Permalink }} 1000w,{{- end -}}
+                        {{- if gt .Width 1200 -}}{{ (.Resize `1200x webp q80`).Permalink }} 1200w,{{- end -}}
+                        {{- if gt .Width 1500 -}}{{ (.Resize `1500x webp q80`).Permalink }} 1500w,{{- end -}}
+                        {{- if gt .Width 2000 -}}{{ (.Resize `2000x webp q80`).Permalink }} 2000w,{{- end -}}
+                        {{ (.Resize (printf `%dx%d webp q80` .Width .Height)).Permalink }} {{ .Width }}w"
+                sizes="100vw"
+                >
+            <img class="heptacycle" src="{{ .Permalink }}" alt="{{ .Name }}" width="{{ .Width }}" height="{{ .Height }}">
+        </picture>
+        {{ end }}
+        <div class="row">
+            <div class="col text-center mt-4">
+                {{ if .Params.secondary_section_cta_text }}<a class="button" href="{{ .Params.secondary_section_cta_url | absLangURL }}">{{ .Params.secondary_section_cta_text }}</a>{{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
 {{- partial "partners" -}}
 
 {{ $headless := .Site.GetPage "/homepage" }}
