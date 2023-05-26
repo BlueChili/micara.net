@@ -80,7 +80,7 @@ li { margin-bottom: 0.75rem; }
     .carousel-caption__content {
       max-width: 500px;
       padding: clamp(1rem, 2vw, 1.5rem) clamp(1rem, 4vw, 2.5rem);
-      background: rgba(30,30,30, 0.3);
+      background: rgba(30,30,30, 0.8);
       h5 {
         text-align: left;
         font-weight: 700;
@@ -88,6 +88,7 @@ li { margin-bottom: 0.75rem; }
       }
       p {
         text-align: left;
+        font-size: clamp(1rem, 1vw, 1.125rem);
       }
       .carousel__cta {
         display: block;
@@ -422,9 +423,80 @@ body > section:nth-child(even) {
 
   }
 }
-.text-primary {
-  color: $primary_blue !important;
+
+.contact-success {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 200;
+  opacity: 0;
+  place-items: center;
+  display: none;
+  &.reveal {
+    display: grid;
+    animation: 0.267s ease-in forwards fadeIn;
+    .success-toast {
+      animation: 0.467s ease-in-out forwards reveal-success-toast;
+    }
+  }
+  &.reveal.destroy {
+    animation: 0.367s ease-in forwards fadeOut;
+    .success-toast {
+      animation: 0.467s ease-in-out forwards hide-success-toast;
+    }
+  }
 }
+
+.success-toast {
+  background: $bg_heading_gradient;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border-radius: 0.75rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  max-width: 31rem;
+  p {
+    color: white;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes reveal-success-toast {
+  0% {
+    transform: scale(0) translateY(-600px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes hide-success-toast {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  100% {
+    transform: scale(0.3) translateX(2600px);
+  }
+}
+
+.text-primary { color: $primary_blue !important; }
 
 .associates {
   background-color: #fafafa;
@@ -507,12 +579,10 @@ a {
   }
 }
 
-#hero {
-  background: $bg_heading_gradient;
-}
-#heptacycle {
-  position: relative;
-}
+#hero { background: $bg_heading_gradient; }
+
+#heptacycle { position: relative; }
+
 .heptacycle {
   max-width: 750px;
   object-fit: contain;
@@ -522,4 +592,4 @@ a {
   width: 100%;
 }
 
-
+.work-summary .work-image .img { aspect-ratio: 16/9; }

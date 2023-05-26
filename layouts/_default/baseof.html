@@ -34,6 +34,7 @@
   {{- $font := resources.GetRemote $font_url (dict "key" $font_cache_key) -}}
   <style>{{ $font.Content | safeCSS }}</style>
   <style>* { font-family: 'Source Sans Pro', sans-serif !important; }</style>
+  {{ block "header_js" . }}{{ end }}
 </head>
 
 <body class='page {{ block "body_classes" . }}{{ end }}'>

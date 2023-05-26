@@ -4,7 +4,7 @@
 
 {{ define "main" }}
 
-{{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" (default .Title .Params.heroHeading) "subheading" .Params.heroSubHeading "content" .)}}
+{{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" "Blog" "subheading" .Params.heroSubHeading "content" .)}}
 {{ if .Content }}
 <div class="container pt-6 pt-md-10">
   <div class="row">
@@ -20,7 +20,7 @@
 <div class="container pb-6 pt-6 pb-md-10 pt-md-10">
   <div class="row">
     {{ range .Pages.ByWeight }}
-    <div class="col-12 col-md-6 mb-2 ">{{ .Render "summary" }}</div>
+    <div class="col-12 col-md-6 mb-2 d-flex">{{ .Render "summary" }}</div>
     {{ end }}
   </div>
 </div>

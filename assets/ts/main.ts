@@ -21,3 +21,10 @@ const carouselObserver = new IntersectionObserver((entries) => {
 const homepageCarouselSlides = document.querySelectorAll('#homepagecarousel .carousel-item');
 
 homepageCarouselSlides.forEach((slide) => carouselObserver.observe(slide));
+
+const submit_form = (event) => {
+  console.log(event);
+
+}
+
+document.querySelector('#contact_form_submit')?.addEventListener('click', submit_form);
