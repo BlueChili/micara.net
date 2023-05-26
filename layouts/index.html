@@ -21,7 +21,7 @@
                     <div class="carousel-caption__content">
                         {{ with .heading }}<h5>{{ . }}</h5>{{ end }}
                         {{ with .text }}<p class="d-none d-md-block">{{ . }}</p>{{ end }}
-                        {{ if $.Params.carousel_cta_text }}<a class="carousel__cta" href="{{ default "#" $.Params.carousel_cta_url }}">{{ $.Params.carousel_cta_text }}</a>{{ end }}
+                        {{ if $.Params.carousel_cta_text }}<a class="carousel__cta" href="{{ default "#" (absLangURL $.Params.carousel_cta_url) }}">{{ $.Params.carousel_cta_text }}</a>{{ end }}
                     </div>
                 </div>
             </div>

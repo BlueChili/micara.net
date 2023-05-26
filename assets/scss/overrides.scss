@@ -2,6 +2,10 @@ $primary_blue: #7792C2;
 $bg_gray: #eaeaea;
 $bg_heading_gradient: linear-gradient(90deg, #7792c2, #34a853);
 
+ul { list-style: inside; margin-bottom: 2rem; }
+
+li { margin-bottom: 0.75rem; }
+
 .button {
   background: $primary_blue;
   &:hover { background: darken($primary_blue, 15%); }
@@ -13,6 +17,9 @@ $bg_heading_gradient: linear-gradient(90deg, #7792c2, #34a853);
   position: sticky;
   top: 0;
   z-index: 100;
+  .main-menu ul, .main-menu ul li {
+    margin-bottom: 0;
+  }
   .main-menu ul li a {
     color: $primary_blue;
     &:hover {
@@ -214,6 +221,7 @@ ol { list-style-type: decimal; }
   position: relative;
   cursor: pointer;
     &:after {
+      pointer-events: none;
       content: "";
       width: 16px;
       height: 16px;
@@ -299,6 +307,7 @@ ol { list-style-type: decimal; }
     color: black;
     font-weight:400;
   }
+  ul li { margin-bottom: 0; }
 }
 
 .footer__logo {

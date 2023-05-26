@@ -1,9 +1,11 @@
 {{ define "main" }}
 <section id="contact" class="strip bg-cover bg-position-top bg-overlay">
-    <div class="container pt-8">
+    <div class="heading-bg w-100 pt-4 pb-4">
+        {{ with .Title }}<h1 class="text-white text-center text-capitalize">{{ . }}</h1>{{ end }}
+    </div>
+    <div class="container pt-4">
         <div class="row">
             <div class="col-12 contact-content">
-                {{ with .Title }}<h2 class="text-primary text-center text-capitalize mb-4">{{ . }}</h2>{{ end }}
                 <p>{{ .Content }}</p>
                 {{ if .Params.button }}<a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>{{ end }}
             </div>
