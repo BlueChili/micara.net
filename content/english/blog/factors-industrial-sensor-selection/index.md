@@ -2,6 +2,7 @@
 title: "What are important factors for sensor selection of industrial use cases?"
 date: "2023-05-18"
 images: ["google-deepmind-D_YZmKGSyic-unsplash.jpg"]
+tags: [ 'IoT', "Edge", "Machine Learning" ]
 ---
 
 

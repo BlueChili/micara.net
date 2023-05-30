@@ -67,5 +67,8 @@ Bildnachweis
 * Woman wearing grey shirt., Photo by [Mahdis Mousavi](https://unsplash.com/photos/hJ5uMIRNg5k)  [Unsplash](https://unsplash.com)
 * Inter server rack, Photo by [Lars Kienle](https://unsplash.com/photos/r3pIy-3Xgmg)  [Unsplash](https://unsplash.com)
 * Taipei Energy Hill solar park from above., Photo by [Anders J](https://unsplash.com/photos/hxUcl0nUsIY)  [Unsplash](https://unsplash.com)
+* a group of computers, Photo by [Google DeepMind](https://unsplash.com/photos/D_YZmKGSyic) [Unsplash](https://unsplash.com)
+* shape, Photo by [Google DeepMind](https://unsplash.com/photos/ggeXPf_ykAU) [Unsplash](https://unsplash.com)
+* a close up of a window with a building in the background, Photo by [Claudio Schwarz](https://unsplash.com/photos/fyeOxvYvIyY) [Unsplash](https://unsplash.com)
 
 Source:eRecht24

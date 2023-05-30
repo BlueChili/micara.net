@@ -2,6 +2,7 @@
 title: "Was ist für das maschinelle Lernen besonders wichtig, wenn Daten am Rande der Wertschöpfungskette generiert werden?"
 date: "2023-05-21"
 images: ["claudio-schwarz-fyeOxvYvIyY-unsplash.jpg"]
+tags: [ 'IoT', "Edge", "Machine Learning" ]
 ---
  
 

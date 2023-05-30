@@ -2,6 +2,7 @@
 title: "Ποιοι είναι οι σημαντικοί παράγοντες για την επιλογή αισθητήρων σε περιπτώσεις βιομηχανικής χρήσης;"
 date: "2023-05-18"
 images: ["google-deepmind-D_YZmKGSyic-unsplash.jpg"]
+tags: [ 'IoT', "Edge", "Machine Learning" ]
 ---
 
 

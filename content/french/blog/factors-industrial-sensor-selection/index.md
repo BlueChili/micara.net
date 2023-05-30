@@ -2,6 +2,7 @@
 title: "Quels sont les facteurs importants pour la sélection des capteurs dans les cas d'utilisation industrielle?"
 date: "2023-05-18"
 images: ["google-deepmind-D_YZmKGSyic-unsplash.jpg"]
+tags: [ 'IoT', "Edge", "Machine Learning" ]
 ---
 Le choix du bon capteur pour un cas d'utilisation industrielle est essentiel pour garantir la précision et la fiabilité de la collecte des données. Le capteur doit être capable de mesurer avec précision le paramètre cible tout en étant suffisamment robuste pour résister aux environnements industriels difficiles. Voici quelques-uns des facteurs importants pour la sélection des capteurs dans les cas d'utilisation industrielle : 
 

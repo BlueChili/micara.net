@@ -9,7 +9,7 @@
     <div class="col-12 col-md-8">
         <nav class="blog-breadcrumbs">
         {{ range .Ancestors.Reverse }} 
-            <a href="{{ .Permalink }}">{{ if eq .Permalink site.BaseURL }}Micara.net{{ else}}{{ humanize .Section }}{{ end }}</a>
+            <a href="{{ .Permalink }}">{{ if eq 0 (len .Ancestors) }}Micara.net{{ else}}{{ humanize .Section }}{{ end }}</a>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style=""><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
         {{ end }}
         <a href="#">{{ truncate 25 .Title }}</a>

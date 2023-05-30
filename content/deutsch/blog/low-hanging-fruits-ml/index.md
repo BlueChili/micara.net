@@ -2,6 +2,7 @@
 title: "Was sind die niedrig hängenden Früchte bei den Anwendungsfällen des maschinellen Lernens im industriellen Umfeld?"
 date: "2023-05-19"
 images: ["google-deepmind-ggeXPf_ykAU-unsplash.jpg"]
+tags: [ 'IoT', "Edge", "Machine Learning" ]
 ---
 
 Maschinelles Lernen wird in der Industrie immer beliebter, insbesondere bei Edge-Computing-Anwendungen. Beim Edge-Machine-Learning werden maschinelle Lernmodelle auf Edge-Geräten wie Sensoren, Robotern und anderen Geräten des Internets der Dinge (IoT) eingesetzt, um Daten in Echtzeit zu verarbeiten und Entscheidungen zu treffen, ohne dass eine zentrale Verarbeitung erforderlich ist. Während einige Anwendungsfälle des maschinellen Lernens in industriellen Randbereichen eine Herausforderung darstellen können, bieten andere niedrig hängende Früchte und können schnelle Gewinne für Unternehmen ermöglichen. In diesem Artikel werden wir einige der niedrig hängenden Früchte in industriellen Edge-Machine-Learning-Anwendungsfällen untersuchen. 

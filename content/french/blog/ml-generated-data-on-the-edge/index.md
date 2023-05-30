@@ -2,6 +2,7 @@
 title: "Qu'est-ce qui est particulièrement important pour l'apprentissage automatique lorsque les données sont générées à la périphérie?"
 date: "2023-05-21"
 images: ["claudio-schwarz-fyeOxvYvIyY-unsplash.jpg"]
+tags: [ 'IoT', "Edge", "Machine Learning" ]
 ---
  
 

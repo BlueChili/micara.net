@@ -2,6 +2,7 @@
 title: "Quels sont les fruits à portée de main dans les cas d'utilisation de l'apprentissage automatique en périphérie industrielle?"
 date: "2023-05-19"
 images: ["google-deepmind-ggeXPf_ykAU-unsplash.jpg"]
+tags: [ 'IoT', "Edge", "Machine Learning" ]
 ---
 
 L'apprentissage automatique devient de plus en plus populaire dans les milieux industriels, en particulier dans les applications d'informatique périphérique. L'apprentissage automatique en périphérie consiste à déployer des modèles d'apprentissage automatique sur des dispositifs en périphérie, tels que des capteurs, des robots et d'autres dispositifs de l'Internet des objets (IoT), afin de traiter les données en temps réel et de prendre des décisions sans avoir besoin d'un traitement centralisé. Si certains cas d'utilisation de l'apprentissage automatique en périphérie industrielle peuvent être difficiles, d'autres offrent des fruits à portée de main et peuvent permettre aux entreprises d'obtenir des gains rapides. Dans cet article, nous allons explorer certains des fruits à portée de main dans les cas d'utilisation de l'apprentissage automatique en périphérie industrielle. 

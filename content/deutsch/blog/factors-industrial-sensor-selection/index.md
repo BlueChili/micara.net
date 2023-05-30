@@ -2,6 +2,7 @@
 title: "Was sind wichtige Faktoren für die Auswahl von Sensoren für industrielle Anwendungsfälle?"
 date: "2023-05-18"
 images: ["google-deepmind-D_YZmKGSyic-unsplash.jpg"]
+tags: [ 'IoT', "Edge", "Machine Learning" ]
 ---
 Die Auswahl des richtigen Sensors für einen industriellen Anwendungsfall ist entscheidend für eine genaue und zuverlässige Datenerfassung. Der Sensor muss in der Lage sein, den Zielparameter genau zu messen und gleichzeitig robust genug sein, um rauen industriellen Umgebungen standzuhalten. Einige der wichtigsten Faktoren für die Auswahl von Sensoren in industriellen Anwendungsfällen sind: 
 

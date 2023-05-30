@@ -2,6 +2,7 @@
 title: "What are low hanging fruits in industrial edge machine learning use cases?"
 date: "2023-05-19"
 images: ["google-deepmind-ggeXPf_ykAU-unsplash.jpg"]
+tags: [ 'IoT', "Edge", "Machine Learning" ]
 ---
 
 Machine learning is becoming increasingly popular in industrial settings, particularly in edge computing applications. Edge machine learning involves deploying machine learning models on edge devices, such as sensors, robots, and other Internet of Things (IoT) devices, to process data in real-time and make decisions without the need for centralized processing. While some industrial edge machine learning use cases can be challenging, others offer low hanging fruits and can provide quick wins for companies. In this article, we will explore some of the low hanging fruits in industrial edge machine learning use cases. 
